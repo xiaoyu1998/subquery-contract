@@ -5,6 +5,7 @@ async function main() {
 
     let contractFactory = await ethers.getContractFactory("Token");
     let token = await contractFactory.deploy();
+    await token.waitForDeployment();
 
     console.log("Token", token.target)
 }

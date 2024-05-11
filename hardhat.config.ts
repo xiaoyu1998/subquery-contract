@@ -8,9 +8,9 @@ const dotenvPath = path.resolve(process.cwd(), `.env${mode !== 'production' ? `.
 dotenv.config({ path: dotenvPath });
 
 const getEnvAccount = () => {
-  const { ACCOUNT_KEY } = process.env;
-  if (ACCOUNT_KEY) {
-    return [ACCOUNT_KEY];
+  const accounts = process.env.ACCOUNT_KEY!?.split(',') as string[];
+  if (accounts) {
+    return accounts;
   }
   return [];
 };
