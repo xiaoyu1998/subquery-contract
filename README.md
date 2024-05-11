@@ -11,5 +11,10 @@ npx hardhat node
 
 ### deployment contract
 ```shell
-npx hardhat ignition deploy ./ignition/modules/Token.ts
+npx hardhat run scripts/deploy.ts --network localhost
+```
+
+### deployment contract
+```shell
+npx hardhat run scripts/execute.ts --network localhost
 ```
