@@ -12,8 +12,8 @@ git clone git@github.com:xiaoyu1998/subquery-contract.git --recursive
 
 ### configuration
 ```shell
-1.testnet chainId 1998 and url as your settings
-2.export ACCOUNT_KEY="privateKey for deploy contract and run scripts"
+1.testnet chainId 1998 in hardhat.config.ts
+2.url in hardhat.config.ts
 ```
 
 ### deployment contract
